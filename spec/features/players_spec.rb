@@ -3,7 +3,7 @@ feature 'Players name' do
     visit('/')
     fill_in('Player_1_name', with: 'Mario')
     fill_in('Player_2_name', with: 'Guillaume')
-    click("Submit")
+    click_on("Submit")
     expect(page).to have_content "Mario vs. Guillaume"
   end
 end
