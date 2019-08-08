@@ -18,6 +18,11 @@ class Battle < Sinatra::Base
     erb :play
   end
 
+  get "/p1attackedp2" do
+    @p1name = session[:P1name]
+    @p2name = session[:P2name]
+    erb :p1attackedp2
+  end
 
   run! if app_file == $0
 

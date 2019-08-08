@@ -16,5 +16,12 @@ feature 'Players' do
       expect(page).to have_content "HP: 50", "HP: 50"
     end
   end
+
+  feature 'attack' do
+    scenario 'Player 1 attakcs Player 2 and sends confirmation' do
+      click_on "Player 1 attack"
+      expect(page).to have_content "Mario attacked Guillaume"
+    end
+  end
 end
 
