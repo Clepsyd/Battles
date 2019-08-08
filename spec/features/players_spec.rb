@@ -8,7 +8,9 @@ feature 'Players' do
 
   feature 'names' do
     scenario 'Can expect players to fill in their names' do
-      expect(page).to have_content "Mario vs. Guillaume"
+      expect(page).to have_content "Mario"
+      expect(page).to have_content "vs."
+      expect(page).to have_content "Guillaume"
     end
   end
 
