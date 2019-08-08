@@ -1,9 +1,6 @@
 feature 'Players' do
   before do
-    visit('/')
-    fill_in('Player_1_name', with: 'Mario')
-    fill_in('Player_2_name', with: 'Guillaume')
-    click_on("Submit")
+    sign_in_and_play
   end
 
   feature 'names' do
